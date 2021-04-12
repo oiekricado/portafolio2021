@@ -1,0 +1,468 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(blob-haikei.svg);
+    background-repeat: no-repeat;
+  }
+
+
+
+.grid-inicio {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(2, 50px, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . . . . . . . . . . ."
+      ". . . . . . . . . . . . .";
+  }
+  
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-column: 1/14;
+  }
+  
+  .logo {
+    margin-top: 30px;
+    grid-column: 2/3;
+    margin-left: 15px;
+    grid-row: 1/2;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+  }
+  
+  #hogar {
+    grid-column: 11/12;
+    grid-row: 1/2;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #171726;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  .hablemos {
+    margin-top: 30px;
+    grid-column: 12/13;
+    grid-row: 1/2;
+  }
+  #hablemos {
+    background-color: #03c4a1;
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 500;
+  }
+
+
+  /* seccion 1*/
+.seccion1{
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 70px 70px 80px 110px ;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . . . . . . . . . . ."
+      ". . . . . . . . . . . . .";
+}
+
+#titulo{
+    color: #03c4a1;
+    font-size: 40px;
+    font-family: montserrat;
+    font-weight: 500;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+
+#titulo2{
+    grid-column: 2/4;
+    grid-row: 2;
+    font-size: 40px;
+    font-family: montserrat;
+    font-weight: 400;
+    opacity: 40%;
+    margin:0%;
+}
+
+#descripcion{
+    grid-column: 2/4;
+    grid-row: 3;
+    font-size: 20px;
+    font-family: montserrat;
+    font-weight: 400;
+}
+
+.plataformas{
+    margin-top: 40px;
+    padding-left: 5px;
+    grid-column: 2/4;
+    grid-row: 4;
+    border-left: solid 1px #590995;
+    
+}
+#plataformas{
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 500;
+    opacity: 50%;
+    margin-top: 0%;
+}
+
+.imagen{
+    grid-column: 4/15;
+    grid-row: 2/8;
+    height: 782px;
+    width: 1338px;
+    z-index: 2;
+}
+
+.colorfondo{
+    margin-top: 100px;
+    background-color: #003E53;
+    grid-column: 1/15;
+    grid-row:5;
+    height: 867px;
+}
+
+/*seccion de tipografias etc*/
+.elementos{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows:  50px repeat(4,1fr) ;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . . . . . . . . . . ."
+      ". . . . . . . . . . . . .";
+}
+
+#tituloelementos{
+    margin:0%;
+    font-size: 53px;
+    font-family: montserrat;
+    font-weight: 400;
+    grid-column: 2/4;
+    }
+    
+#titulodescripcion{
+    margin-top: 36px;
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 400;
+    opacity: 50%;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+#descripcionejemplo{
+    font-size: 20px;
+    font-family: montserrat;
+    font-weight: 100;
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+/*seccion 2*/
+#tituloelementos2{
+    margin:0%;
+    font-size: 53px;
+    font-family: montserrat;
+    font-weight: 400;
+    grid-column: 7/9;
+    }
+    
+#titulodescripcion2{
+    margin-top: 36px;
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 400;
+    opacity: 50%;
+    grid-column: 7/9;
+    grid-row: 2/3;
+}
+
+#descripcionejemplo2{
+    font-size: 20px;
+    font-family: montserrat;
+    font-weight: 700;
+    grid-column: 7/9;
+    grid-row: 3/4;
+}
+
+/* seccion color*/
+#titulocolor{
+    font-size: 53px;
+    font-family: montserrat;
+    font-weight: 400;
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
+#circulo1{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#circulo2{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+#circulo3{
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+
+/*seccion clientes*/
+
+.clientes{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 85px 1fr 1fr 50px 1fr;
+    gap: 0px 0px;
+    justify-content: center;
+    align-content: center;
+    background-image: url(backgroundabajo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #clientes{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    border-bottom: solid #03c4a1;
+    text-align: center;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 33px;
+    margin:0%;
+  
+  }
+  
+  .clientescards{
+    margin-top: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 58px;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  
+  
+  /*card1*/
+  .clientecard1{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #fdfdfd;
+    height: 107px;
+    width: 199px;
+    grid-column: 2/3;
+    height: 107px;
+    width: 199px;
+    border-radius: 20px;
+  }
+  .clientecard1 img {
+    height: 107px;
+    width: 109px;
+    filter: invert(100%);
+  }
+  
+  /*card2*/
+  .clientecard2{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #fdfdfd;
+    height: 107px;
+    width: 199px;
+    grid-column: 3/4;
+    height: 107px;
+    width: 199px;
+    border-radius: 20px;
+  }
+  .clientecard2 img {
+    height: 107px;
+    width: 109px;
+  }
+  
+  /*cartas terminacion*/
+  
+  
+  /*titulo*/
+  #titulotrabajarconmigo{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 45px;
+    font-family: montserrat;
+    font-weight: 600;
+    color: #f0f0f0;
+  }
+  
+  .hablemos-clientes{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-weight: 500;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  
+  #hablemos-clientes {
+    background-color: #03c4a1;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 500;
+  }
+  
+
+  /*/////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+
+@media (max-width:1860px){
+  #titulo{
+    font-size: 30px;
+    grid-column: 2/5;
+  }
+  #titulo2{
+    font-size: 20px;
+    grid-column: 2/5;
+  }
+  #descripcion{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1300px) {
+  /*menu*/
+  #hogar {
+    margin-right: 50px;
+  }
+  /*parte titulo*/
+  .imagen{
+    grid-column: 5/9;
+    height:490px;
+    width:840px;
+  }
+  .imagen img{
+    height:490px;
+    width:840px;
+  }
+}
+
+@media (max-width:950px){
+  #titulo{
+    font-size: 25px;
+    grid-column: 1/15;
+    text-align: center;
+  }
+  #titulo2{
+    font-size: 20px;
+    grid-column: 1/15;
+    text-align: center;
+  }
+  #descripcion{
+    grid-column: 1/15;
+    text-align: center;
+  }
+
+
+  .imagen{
+    grid-column: 1/15;
+    grid-row: 5/8;
+    height: 212px;
+    width: 364px;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+  .imagen img{
+    height: 212px;
+    width: 364px;
+  }
+  .colorfondo{
+    height: 200px;
+  }
+
+
+  /*tipografias*/
+  .elementos{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: 50px repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . . . . . . . ."
+    ". . . . . . . . . . . . .";
+  }
+  #tituloelementos2{
+    grid-row: 4/5;
+    grid-column: 1/5;
+  }
+  #titulodescripcion2{
+    grid-row: 5/6;
+    grid-column: 1/5;
+    margin-left: 10px;
+  }
+  #descripcionejemplo2{
+    grid-row: 6/7;
+    grid-column: 1/5;
+  }
+
+  #titulocolor{
+    grid-row: 7/8;
+  }
+  #circulo1{
+    grid-row:8/9;
+  }
+  #circulo2{
+    grid-row: 8/9;
+  }
+  #circulo3{
+    grid-row: 8/9;
+  }
+
+
+  /*seccion clientes*/
+  .clientecard1{
+    height: 65px;
+    width: 121px;
+  }
+  .clientecard2{
+    height: 65px;
+    width: 121px;
+  }
+  .clientecard1 img{
+    height: 66px;
+    width: 70px;
+  }
+  .clientecard2 img{
+    height: 60px;
+    width: 68px;
+  }
+}

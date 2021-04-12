@@ -1,0 +1,665 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(wave.svg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+}
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, #a929ff, #a68eff);
+  border-radius: 10px;
+}
+
+
+.grid-inicio {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, 50px, 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . . . . . . . . . . ."
+    ". . . . . . . . . . . . .";
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  background-color: aqa;
+  grid-column: 1/14;
+}
+
+.logo {
+  margin-top: 30px;
+  grid-column: 2/3;
+  margin-left: 15px;
+  grid-row: 1/2;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.logo:hover{
+
+  color: black;
+}
+
+#hogar {
+  grid-column: 11/12;
+  grid-row: 1/2;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #171726;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  transition-duration: 0.5s;
+}
+#hogar:hover{
+  color:white;
+}
+
+.hablemos {
+  margin-top: 30px;
+  grid-column: 12/13;
+  grid-row: 1/2;
+}
+#hablemos {
+  background-color: #03c4a1;
+  text-decoration: none;
+  color: #171726;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: montserrat;
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
+#hablemos:hover{
+  background-color: blueviolet;
+}
+
+.titulo {
+  grid-column: 2/8;
+  grid-row: 2/3;
+  margin-top: 300px;
+}
+.titulo h1 {
+  color: black;
+  font-size: 77px;
+  font-family: montserrat;
+  font-weight: 600;
+  margin-bottom: 0%;
+}
+.titulo p {
+  color: black;
+  font-family: montserrat;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 0%;
+  padding-left: 5px;
+}
+
+.imageninicio {
+  grid-column: 9/14;
+  grid-row: 2;
+  margin-top: 200px;
+}
+
+/* p2da seccion "proyectos*/
+.proyectos {
+  margin-top: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  justify-items: center;
+}
+
+.proyectostitulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: 0%;
+  border-bottom: solid #03c4a1;
+  text-align: center;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 33px;
+}
+#proyectos{
+  margin: 0%;
+}
+
+/* cards de proyectos*/
+
+
+/*card1*/
+.contenedorcards  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 100px;
+  background-color:#D7D8F8;
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration:0.5s;
+}
+.contenedorcards:hover{
+  width: 1310px;
+}
+
+
+/*ESTOS ATRIBUTOS SE HEREDAN A TODAS LAS CARDS */
+.card{
+  grid-column: 3/4;
+  grid-row: 1/5;
+  align-self: center;
+}
+#titulocard{
+  grid-column: 1/3;
+  grid-row: 1/3;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 40px;
+  font-family: montserrat;
+  font-weight: 400;
+}
+#textocard{
+  grid-column: 1/3;
+  grid-row: 2;
+  margin-top: 150px;
+  margin-left: 50px;
+  font-size: 15px;
+  font-family: montserrat;
+  font-weight: 400;
+}
+.botonsitiweb{
+  grid-column: 1/2;
+  grid-row: 3;
+  text-align: center;
+  align-self: end;
+  margin-left: 50px;
+  font-size: 15px;
+  font-family: montserrat;
+  font-weight: 400;
+  opacity: 60%;
+
+}
+.botonsitiweb a{
+  text-decoration: none;
+  padding:10px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.botonPWA{
+  grid-column: 2/3;
+  grid-row: 3;
+  margin-left: 30px;
+  align-self: end;
+  font-size: 15px;
+  font-family: montserrat;
+  font-weight: 400;
+  opacity: 60%;
+
+}
+.botonPWA a{
+  text-decoration: none;
+  padding:10px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+/*termina AQUI LOS ATRIBUTOS*/
+
+
+
+
+
+
+
+
+
+/*card2*/
+.contenedorcards2  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-top: 100px;
+  background-color:#FD5B90;
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.contenedorcards2:hover{
+  width: 1310px;
+}
+
+/*card3*/
+.contenedorcards3  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-top: 100px;
+  background-color:hsla(253, 69%, 25%, 0.671);
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.contenedorcards3:hover{
+  width: 1310px;
+}
+
+/*card4*/
+.contenedorcards4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-top: 100px;
+  background-color:#003E53;
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.contenedorcards4:hover{
+  width: 1310px;
+}
+
+
+/*card5*/
+.contenedorcards5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  margin-top: 100px;
+  background-color:#D5D8BF;
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.contenedorcards5:hover{
+  width: 1310px;
+}
+
+
+/* seecion clientes*/
+.clientes{
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 85px 1fr 1fr 50px 1fr;
+  gap: 0px 0px;
+  justify-content: center;
+  align-content: center;
+  background-image: url(backgroundabajo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#clientes{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  border-bottom: solid #03c4a1;
+  text-align: center;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 33px;
+  margin:0%;
+
+}
+
+.clientescards{
+  margin-top: 20px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 58px;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+/*card1*/
+.clientecard1{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #f0f0f0;
+  height: 107px;
+  width: 199px;
+  grid-column: 2/3;
+  height: 107px;
+  width: 199px;
+  border-radius: 20px;
+}
+.clientecard1 img {
+  height: 107px;
+  width: 109px;
+  filter: invert(100%);
+}
+
+/*card2*/
+.clientecard2{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #f0f0f0;
+  height: 107px;
+  width: 199px;
+  grid-column: 3/4;
+  height: 107px;
+  width: 199px;
+  border-radius: 20px;
+}
+.clientecard2 img {
+  height: 107px;
+  width: 109px;
+}
+
+/*cartas terminacion*/
+
+
+/*titulo*/
+#titulotrabajarconmigo{
+  grid-column: 1/4;
+  grid-row: 3/4;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 45px;
+  font-family: montserrat;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.hablemos-clientes{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-weight: 500;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+#hablemos-clientes {
+  background-color: #03c4a1;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: montserrat;
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
+#hablemos-clientes:hover{
+  background-color: white;
+  color: black;
+}
+
+
+/*/////////////////////////////////////////////////////
+///////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+
+
+/*AQUI EMPIEZAN LAS @MEDIA QUERIES*/
+
+@media (max-width:1300px) {
+
+  
+  /* menu*/
+  #hogar{
+    margin-right: 50px;
+  }
+  
+  
+  /*titulo*/
+  .titulo h1{
+    font-size: 40px;
+  }
+  .titulo p{
+    font-size: 10px;
+  }
+  /*imagen del titulo*/
+
+  .imageninicio img{
+    height: 255px;
+    width: 314px;
+  }
+  /*proyectos*/
+  .proyectostitulo{
+    font-size: 20px;
+    grid-column: 1/15;
+  }
+
+  /*cards1*/
+  .contenedorcards{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards:hover{
+    width: 810px;
+  }
+
+  /*los atributos heredados de las cards*/
+  #titulocard{
+   font-size: 20px;
+  }
+  #textocard{
+   font-size: 10px;
+  }
+  .botonsitiweb{
+  font-size: 10px;
+  }
+  .botonPWA{
+    display: none;
+  }
+  .cardimagen img{
+  height: 268px;
+  width: 451px;
+  grid-row: 1/2;
+  }
+  /*card2*/
+  .contenedorcards2{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards2:hover{
+    width: 810px;
+  }
+  /*card3*/
+  .contenedorcards3{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards3:hover{
+    width: 810px;
+  }
+  /*card4*/
+  .contenedorcards4{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards4:hover{
+    width: 810px;
+  }
+  /*card5*/
+  .contenedorcards5{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards5:hover{
+    width: 810px;
+  }
+
+  /*seccion clientes*/
+  .clientecard1{
+    height: 65px;
+    width: 121px;
+  }
+  .clientecard2{
+    height: 65px;
+    width: 121px;
+  }
+  .clientecard1 img{
+    height: 66px;
+    width: 70px;
+  }
+  .clientecard2 img{
+    height: 60px;
+    width: 68px;
+  }
+}
+ 
+
+
+/*MEDIA QUERIE DE 900PX*/
+@media (max-width:900px) {
+
+  
+  /* menu*/
+  #hogar{
+    margin-right: 50px;
+  }
+  
+  
+  /*titulo*/
+  .titulo h1{
+    font-size: 30px;
+
+  }
+  .titulo{
+    grid-column: 1/15;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .titulo p{
+    font-size: 10px;
+  }
+  /*imagen del titulo*/
+  .imageninicio{
+    display: none;
+  }
+
+  /*cards1*/
+  .contenedorcards{
+    height: 269px ;
+    width: 468px;
+  }
+  .contenedorcards:hover{
+    width: 468px;
+  }
+
+  /*los atributos heredados de las cards*/
+  #titulocard{
+   font-size: 15px;
+   margin-top: 70px;
+  }
+  #textocard{
+   font-size: 7px;
+   margin-top: 80px;
+  }
+  .botonsitiweb{
+  font-size: 7px;
+  grid-column: 1/3;
+  margin-left: 0;
+  }
+  .botonPWA{
+    display: none;
+  }
+  .cardimagen img{
+  height: 164px;
+  width: 278px;
+  grid-row: 1/2;
+  }
+  /*card2*/
+  .contenedorcards2{
+    height: 269px ;
+    width: 468px;
+  }
+  .contenedorcards2:hover{
+    width: 468px;
+  }
+  /*card3*/
+  .contenedorcards3{
+    height: 269px ;
+    width: 468px;
+  }
+  .contenedorcards3:hover{
+    width: 468px;
+  }
+  /*card4*/
+  .contenedorcards4{
+    height: 269px ;
+    width: 468px;
+  }
+  .contenedorcards4:hover{
+    width: 468px;
+  }
+  /*card5*/
+  .contenedorcards5{
+    height: 269px ;
+    width: 468px;
+  }
+  .contenedorcards5:hover{
+    width: 468px;
+  }
+
+  /*seccion clientes*/
+  .clientecard1{
+    height: 65px;
+    width: 121px;
+  }
+  .clientecard2{
+    height: 65px;
+    width: 121px;
+  }
+  .clientecard1 img{
+    height: 66px;
+    width: 70px;
+  }
+  .clientecard2 img{
+    height: 60px;
+    width: 68px;
+  }
+}
+
+
+
+
