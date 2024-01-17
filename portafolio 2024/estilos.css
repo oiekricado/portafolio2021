@@ -7,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Satoshi';      
-    text-align: center;          
+              
 }
 
 header{
@@ -46,5 +46,80 @@ header{
     border-radius:5px ;
     font-weight: 100;
 
+}
+.inicio{
+    display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        align-items:center ;
+        height: 100vh;
+}
+.imageninicio{
+    height: 552px;
+    grid-column: 11/12;
+    grid-row: 1;
+    align-self: self-start;
+}
+
+.titulo{
+    grid-column: 2/10;
+    font-size: 70px;
+    grid-row: 1;
+    text-align: start;
+    align-self: self-start;
+    margin-top: 50px;
+}
+.iconos{
+    height: 400px;
+    grid-column: 2/10;
+    grid-row: 1;
+    
+}
+
+/*parte de servicios */
+
+#uiuxdesign{
+    width: 293px;
+    height: 337px;
+    border-radius:25px ;
+    background: rgb(3,196,161);
+background: linear-gradient(137deg, rgba(3,196,161,1) 37%, rgba(245,172,255,1) 100%);
+color: white;
+
+}
+
+#uiuxdesign h1{
+    font-size: 50px;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+#uiuxdesign img{
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+/*servicio de desarrollo web */
+
+#desarrollo-web{
+    width: 293px;
+    height: 337px;
+    border-radius:25px ;
+    background: rgb(173,242,229);
+background: linear-gradient(137deg, rgba(173,242,229,1) 8%, rgba(245,172,255,1) 100%);
+
+}
+
+#desarrollo-web h1{
+    font-size: 50px;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+#desarrollo-web img{
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 50px;
 }
 
