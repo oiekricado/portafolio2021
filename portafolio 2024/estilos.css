@@ -78,6 +78,16 @@ header{
     
 }
 
+/*servicios */
+.servicios{
+height:400px;
+display: grid;
+grid-template-columns: 1fr 350px 1fr;
+align-items: center;
+justify-content: center;
+justify-items: center;
+}
+
 /*parte de servicios */
 
 #uiuxdesign{
@@ -87,7 +97,7 @@ header{
     background: rgb(3,196,161);
 background: linear-gradient(137deg, rgba(3,196,161,1) 37%, rgba(245,172,255,1) 100%);
 color: white;
-
+justify-self: end;
 }
 
 #uiuxdesign h1{
@@ -109,7 +119,7 @@ color: white;
     border-radius:25px ;
     background: rgb(173,242,229);
 background: linear-gradient(137deg, rgba(173,242,229,1) 8%, rgba(245,172,255,1) 100%);
-
+color: white;
 }
 
 #desarrollo-web h1{
@@ -122,4 +132,28 @@ background: linear-gradient(137deg, rgba(173,242,229,1) 8%, rgba(245,172,255,1) 
     margin-top: 20px;
     height: 50px;
 }
+
+/*marketing */
+
+#marketing{
+    width: 293px;
+    height: 337px;
+    border-radius:25px ;
+    background: rgb(3,196,161);
+background: linear-gradient(137deg, rgba(3,196,161,1) 37%, rgba(245,172,255,1) 100%);
+color: white;
+justify-self: start;
+}
+
+#marketing h1{
+    font-size: 50px;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+#marketing img{
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 50px;
+}
+
 
