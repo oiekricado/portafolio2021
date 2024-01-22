@@ -340,3 +340,66 @@ justify-self: start;
   }
   
 
+/* EMPIEZAN LAS MEDIA QUERIES*/
+
+
+@media (max-width:1300px) {
+  .contenedorcards{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards:hover{
+    width: 810px;
+  }
+
+  /*los atributos heredados de las cards*/
+  #titulocard{
+   font-size: 20px;
+  }
+  #textocard{
+   font-size: 10px;
+  }
+  .botonsitiweb{
+  font-size: 10px;
+  }
+  .botonPWA{
+    display: none;
+  }
+  .cardimagen img{
+  height: 268px;
+  width: 451px;
+  grid-row: 1/2;
+  }
+  /*card2*/
+  .contenedorcards2{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards2:hover{
+    width: 810px;
+  }
+  /*card3*/
+  .contenedorcards3{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards3:hover{
+    width: 810px;
+  }
+  /*card4*/
+  .contenedorcards4{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards4:hover{
+    width: 810px;
+  }
+  /*card5*/
+  .contenedorcards5{
+    height: 436px ;
+    width: 760px;
+  }
+  .contenedorcards5:hover{
+    width: 810px;
+  }
+}
