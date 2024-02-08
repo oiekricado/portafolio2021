@@ -170,24 +170,7 @@ justify-self: start;
 
 
 /*empiezan los cards */
-/*card1*/
-.contenedorcards  {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 0px 0px;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 100px;
-    background-color:#D7D8F8;
-    height: 632px;
-    width: 1104px;
-    border-radius: 20px;
-    transition-duration:0.5s;
-  }
-  .contenedorcards:hover{
-    width: 1310px;
-  }
+
   
   
   /*ESTOS ATRIBUTOS SE HEREDAN A TODAS LAS CARDS */
@@ -234,29 +217,30 @@ justify-self: start;
     border-radius: 5px;
   }
   
-  .botonPWA{
-    grid-column: 2/3;
-    grid-row: 3;
-    margin-left: 30px;
-    align-self: end;
-    font-size: 15px;
-    font-family: montserrat;
-    font-weight: 400;
-    opacity: 60%;
   
-  }
-  .botonPWA a{
-    text-decoration: none;
-    padding:10px 20px;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-  }
   /*termina AQUI LOS ATRIBUTOS*/
   
   
   
-  
+  /*card1*/
+.contenedorcards  {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 100px;
+  background-color:#206EB0;
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration:0.5s;
+  color: white;
+}
+.contenedorcards:hover{
+  width: 1310px;
+}
   
   
   
@@ -271,7 +255,7 @@ justify-self: start;
     grid-column: 2/3;
     grid-row: 3/4;
     margin-top: 100px;
-    background-color:#FD5B90;
+    background-color:#E4D6F8;
     height: 632px;
     width: 1104px;
     border-radius: 20px;
@@ -290,11 +274,12 @@ justify-self: start;
     grid-column: 2/3;
     grid-row: 4/5;
     margin-top: 100px;
-    background-color:hsla(253, 69%, 25%, 0.671);
+    background-color:#003E53;
     height: 632px;
     width: 1104px;
     border-radius: 20px;
     transition-duration: 0.5s;
+    color: white;
   }
   .contenedorcards3:hover{
     width: 1310px;
@@ -309,7 +294,7 @@ justify-self: start;
     grid-column: 2/3;
     grid-row: 5/6;
     margin-top: 100px;
-    background-color:#003E53;
+    background-color:#E9C46A;
     height: 632px;
     width: 1104px;
     border-radius: 20px;
@@ -329,11 +314,12 @@ justify-self: start;
     grid-column: 2/3;
     grid-row: 6/7;
     margin-top: 100px;
-    background-color:#D5D8BF;
+    background-color:#B37FBC;
     height: 632px;
     width: 1104px;
     border-radius: 20px;
     transition-duration: 0.5s;
+    color: white;
   }
   .contenedorcards5:hover{
     width: 1310px;
