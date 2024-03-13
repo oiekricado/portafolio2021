@@ -29,12 +29,16 @@ header{
     grid-column: 9/10;
     font-weight: 100;
     text-align: center;
+    text-decoration: none;
+    color: black;
 }
 .contacto{
     grid-column: 10/11;
     margin-left:30px ;
     margin-right: 30px;
     font-weight: 100;
+    text-decoration: none;
+    color: black;
 }
 .hablemos{
     grid-column: 11/12;
@@ -47,6 +51,8 @@ header{
     border-radius:5px ;
     font-weight: 100;
     text-align: center;
+    text-decoration: none;
+    
 }
 .inicio{
     display: grid;
@@ -327,65 +333,161 @@ justify-self: start;
   
 
 /* EMPIEZAN LAS MEDIA QUERIES*/
+/**************************************/
+/**************************************/
+/**************************************/
+/**************************************/
 
 
 @media (max-width:1300px) {
-  .contenedorcards{
-    height: 436px ;
-    width: 760px;
-  }
-  .contenedorcards:hover{
-    width: 810px;
-  }
+  /*parte del header*/
+/**************************/
+.logo{
+  font-size: 60px;
+}
+.hogar{
+  font-size: 20px;
+}
+.contacto{
+  font-size: 20px;
+}
+.hablemos{
+  font-size: 15px;
+}
+
+.titulo{
+  font-size: 50px;
+  z-index: 2;
+}
+.imageninicio{
+  height: 200px;
+  z-index: 1;
+}
+.iconos{
+  height: 200px;
+}
+
+.proyectos{
+  margin-top: 0;
+}
+
+
+/* parte de las card de servicios*/
+/**********************/
+
+.servicios{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#uiuxdesign{
+  height: 150px;
+  width: 110px;
+  margin-right: 10px;
+  
+}
+#uiuxdesign img{
+  height: 20px;
+}
+#uiuxdesign h1{
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+#desarrollo-web{
+  height: 150px;
+  width: 110px;
+  margin-right: 10px;
+}
+
+#desarrollo-web img {
+  height: 20px;
+}
+
+#desarrollo-web  h1{
+  font-size: 15px;
+  margin-top: 60px;
+}
+#marketing{
+  height: 150px;
+  width: 110px;
+}
+#marketing img {
+   height: 20px;
+}
+#marketing h1{
+  font-size: 15px;
+  margin-top: 60px;
+}
+
+
+
+
+
+
 
   /*los atributos heredados de las cards*/
   #titulocard{
-   font-size: 20px;
+   font-size: 15px;
+   margin: 10px 10px;
   }
   #textocard{
    font-size: 10px;
+   margin: 30px 10px 5px 10px;
   }
   .botonsitiweb{
   font-size: 10px;
+
+  height: 20px;
+  width: 100px;
   }
   .botonPWA{
     display: none;
   }
   .cardimagen img{
-  height: 268px;
-  width: 451px;
+  height: 150px;
+  width: 253px;
   grid-row: 1/2;
+  }
+
+
+  /*card1*/
+  .contenedorcards{
+    height: 200px ;
+    width: 360px;
+  }
+  .contenedorcards:hover{
+    width: 410px;
   }
   /*card2*/
   .contenedorcards2{
-    height: 436px ;
-    width: 760px;
+    height: 200px ;
+    width: 360px;
   }
   .contenedorcards2:hover{
-    width: 810px;
+    width: 410px;
   }
   /*card3*/
   .contenedorcards3{
-    height: 436px ;
-    width: 760px;
+    height: 200px ;
+    width: 360px;
   }
   .contenedorcards3:hover{
-    width: 810px;
+    width: 410px;
   }
   /*card4*/
   .contenedorcards4{
-    height: 436px ;
-    width: 760px;
+    height: 200px ;
+    width: 360px;
   }
   .contenedorcards4:hover{
-    width: 810px;
+    width: 410px;
   }
   /*card5*/
   .contenedorcards5{
-    height: 436px ;
-    width: 760px;
+    height: 200px ;
+    width: 360px;
   }
   .contenedorcards5:hover{
-    width: 810px;
+    width: 410px;
   }
 }
