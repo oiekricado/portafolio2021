@@ -444,9 +444,10 @@ justify-self: start;
     display: none;
   }
   .cardimagen img{
-  height: 150px;
-  width: 253px;
+  height: 100px;
+  width: 180px;
   grid-row: 1/2;
+  margin-left: -20px;
   }
 
 
