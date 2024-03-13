@@ -359,10 +359,12 @@ justify-self: start;
   font-size: 50px;
   z-index: 2;
 }
+
 .imageninicio{
   height: 200px;
   z-index: 1;
 }
+
 .iconos{
   height: 200px;
 }
