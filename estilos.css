@@ -26,7 +26,7 @@ header{
     font-size: 69px;
 }
 .hogar{
-    grid-column: 9/10;
+    grid-column: 10/11;
     font-weight: 100;
     text-align: center;
     text-decoration: none;
@@ -336,6 +336,7 @@ justify-self: start;
 }
 .hogar{
   font-size: 20px;
+  margin-right: 10px;
 }
 .contacto{
   font-size: 20px;

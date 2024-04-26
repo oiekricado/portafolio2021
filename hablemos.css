@@ -38,7 +38,7 @@ display: grid;
   font-size: 69px;
 }
 .hogar{
-  grid-column: 9/10;
+  grid-column: 10/11;
   font-weight: 100;
   text-align: center;
   text-decoration: none;
@@ -64,47 +64,41 @@ display: grid;
 /* aqui empieza el titulo y los formularios de contacto*/
 
 #titulo {
-  grid-column: 2/6;
-  grid-row: 2/3;
+  margin-left: 50px;
   margin-top: 250px;
   font-size: 58px;
   font-family: montserrat;
   font-weight: 600px;
 }
 #tip {
-  grid-column: 2/4;
-  grid-row: 3/4;
-  font-size: 20px;
+  margin-left: 50px;
+    font-size: 20px;
   font-family: montserrat;
   font-weight: 600;
 }
 #tips1 {
-  grid-column: 2/4;
-  grid-row: 4/5;
+  margin-left: 50px;
   font-size: 12px;
   font-family: montserrat;
   font-weight: 600;
   opacity: 50%;
 }
 #tips2 {
-  grid-column: 2/4;
-  grid-row: 5/6;
+  margin-left: 50px;
   font-size: 12px;
   font-family: montserrat;
   font-weight: 600;
   opacity: 50%;
 }
 #tips3 {
-  grid-column: 2/4;
-  grid-row: 6/7;
+  margin-left: 50px;
   font-size: 12px;
   font-family: montserrat;
   font-weight: 600;
   opacity: 50%;
 }
 #titulocontacto {
-  grid-column: 2/4;
-  grid-row: 7/8;
+  margin-left: 50px;
   font-size: 50px;
   font-family: montserrat;
   font-weight: 600;
@@ -118,8 +112,7 @@ display: grid;
 }
 
 #whatsappboton {
-  grid-column: 2/3;
-  grid-row: 8/9;
+  
   text-align: center;
   font-size: 20px;
   font-family: montserrat;
@@ -129,7 +122,7 @@ display: grid;
   height: 50px;
   width: 210px;
   padding: 10px;
-  margin-left: 65px;
+  margin-left: 85px;
   background-color: #25d366;
   border-radius: 50px;
 }
@@ -148,6 +141,9 @@ display: grid;
   .formulariogoogleforms iframe{
     height:540px;
     width: 600px;
+  }
+  .hogar{
+    margin-right: 10px;
   }
 }
 
