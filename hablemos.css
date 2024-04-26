@@ -1,8 +1,13 @@
+
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+
 body {
   margin: 0;
   padding: 0;
   background-image: url(blob-haikei.svg);
   background-repeat: no-repeat;
+  font-family: 'Satoshi'; 
 }
 
 body::-webkit-scrollbar {
@@ -17,62 +22,51 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-.grid-inicio {
-  display: grid;
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(9, 50px, 1fr);
-  gap: 0px 0px;
-  grid-template-areas:
-    ". . . . . . . . . . . . ."
-    ". . . . . . . . . . . . .";
-}
-
-.menu {
-  display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-column: 1/14;
-}
-
-.logo {
-  margin-top: 30px;
-  grid-column: 2/3;
-  margin-left: 15px;
-  grid-row: 1/2;
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
+header{
   font-weight: 100;
-  color: white;
-  text-decoration: none;
+display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: 125px ;
+      gap: 0px 0px;
+      align-items:center;
+      align-content: center;
 }
 
-#hogar {
+.logo{
+  grid-column: 2/3;
+  font-weight: 100;
+  font-size: 69px;
+}
+.hogar{
+  grid-column: 9/10;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.contacto{
+  grid-column: 10/11;
+  margin-left:30px ;
+  margin-right: 30px;
+  font-weight: 100;
+  text-decoration: none;
+  color: black;
+}
+.hablemos{
   grid-column: 11/12;
-  grid-row: 1/2;
-  margin-top: 30px;
-  text-decoration: none;
-  color: #171726;
-  font-family: montserrat;
-  font-weight: 500;
-  font-size: 15px;
+  color: white;
+  background-color: #03C4A1;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-radius:5px ;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none; 
+  
 }
 
-.hablemos {
-  margin-top: 30px;
-  grid-column: 12/13;
-  grid-row: 1/2;
-}
-#hablemos {
-  background-color: #03c4a1;
-  text-decoration: none;
-  color: white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-family: montserrat;
-  font-weight: 500;
-}
 
 /* aqui empieza el titulo y los formularios de contacto*/
 
