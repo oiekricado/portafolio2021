@@ -44,14 +44,7 @@ display: grid;
   text-decoration: none;
   color: black;
 }
-.contacto{
-  grid-column: 10/11;
-  margin-left:30px ;
-  margin-right: 30px;
-  font-weight: 100;
-  text-decoration: none;
-  color: black;
-}
+
 .hablemos{
   grid-column: 11/12;
   color: white;
@@ -112,7 +105,7 @@ display: grid;
 #titulocontacto {
   grid-column: 2/4;
   grid-row: 7/8;
-  font-size: 58px;
+  font-size: 50px;
   font-family: montserrat;
   font-weight: 600;
   margin-bottom: 0%;
