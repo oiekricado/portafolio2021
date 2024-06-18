@@ -334,6 +334,7 @@ justify-self: start;
   width: 1104px;
   border-radius: 20px;
   transition-duration: 0.5s;
+  color: white;
 }
 .contenedorcards6:hover{
   width: 1310px;
