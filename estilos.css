@@ -320,7 +320,24 @@ justify-self: start;
     width: 1310px;
   }
   
-
+/*card6*/
+.contenedorcards6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-column: 2/3;
+  grid-row: 7/8;
+  margin-top: 100px;
+  background-color:#0099FF;
+  height: 632px;
+  width: 1104px;
+  border-radius: 20px;
+  transition-duration: 0.5s;
+}
+.contenedorcards6:hover{
+  width: 1310px;
+}
 /* EMPIEZAN LAS MEDIA QUERIES*/
 /**************************************/
 /**************************************/
@@ -479,6 +496,14 @@ justify-self: start;
     width: 360px;
   }
   .contenedorcards5:hover{
+    width: 410px;
+  }
+  /*card6*/
+  .contenedorcards6{
+    height: 200px ;
+    width: 360px;
+  }
+  .contenedorcards6:hover{
     width: 410px;
   }
 }
